@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<tittle></tittle>
+<meta charset="utf-8">
+<style>
+*{margin:0;padding:0}
+.box{width:200px;height:200px;background:pink;margin-left:10px;position:absolute}
+.child{width:50px;height:100px;background:gold;border:1px solid black}
+</style>
+</head>
+<body>
+<div class="box">
+	<div class='child'></div>
+</div>
+</body>
+<script>
+var box =document.getElementsByClassName('box')[0];
+var child=document.getElementsByClassName('child')[0];
+console.log(child.offsetLeft);
+console.log(child.offsetTop);
+</script>
+</html>
